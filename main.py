@@ -16,7 +16,7 @@ def parallel_processing(n, m, data):
         for current in range(n):
             if t_count[current] == 0 and data:
                 output.append((current, time_moment))
-                t_count[current] = data[0]
+                t_count[current] = data[0] - 1
                 data.pop(0)
                 m -= 1
             elif t_count[current] > 0:
